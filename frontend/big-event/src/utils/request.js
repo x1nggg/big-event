@@ -41,7 +41,7 @@ instance.interceptors.response.use(
             return result.data;
         }
         // alert(result.msg?result.msg:'服务异常')
-        ElMessage.error(result.data.message ? result.data.message : '服务异常')
+        ElMessage.error(result.data.msg ? result.data.msg : '服务异常')
         return Promise.reject(result.data);//异步的状态转化成失败的状态
     },
     err => {

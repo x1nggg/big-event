@@ -43,7 +43,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 # 安装依赖
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 启动服务
 python main.py
